@@ -26,7 +26,7 @@ export function SigninForm() {
       <div className='flex flex-col h-full w-full justify-center items-center'>
         <div className='w-full flex flex-col items-center -mt-20 py-12 pb-16 space-y-4'>
           <img className="h-48 w-48 " src="https://raw.githubusercontent.com/praveenpuglia/tailwind-breeze/master/assets/logo.svg" alt="My Image"/>
-          <p className='text-5xl font-black text-white p-6 shadow shadow-white rounded-xl'>Website</p>
+          <p className='text-5xl font-black text-white p-6'>Website</p>
         </div>
         <div className='w-[540px] bg-gray-900 relative flex flex-col space-y-8 p-12 rounded-lg px-16 border border-teal-400 shadow-lg shadow-teal-600'>
           <Blob />
