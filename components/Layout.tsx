@@ -13,8 +13,8 @@ export function Layout({ session, children }: PropsWithChildren<Props>) {
       <Head>
         <title>SupaBase</title>
       </Head>
-      <div className="flex flex-col h-screen bg-black">
-        <header className="p-4 flex justify-between items-center bg-zinc-900 h-28 z-20">
+      <div className="flex flex-col h-screen bg-black overflow-x-hidden">
+        <header className="p-4  justify-between items-center bg-zinc-900 h-28 z-20 hidden xl:flex">
           <h1 className='flex flex-row justify-end space-x-4'>
             <img className="h-12 w-12" src="https://raw.githubusercontent.com/praveenpuglia/tailwind-breeze/master/assets/logo.svg" alt="My Image"/>
             <Link href="/">
@@ -25,7 +25,7 @@ export function Layout({ session, children }: PropsWithChildren<Props>) {
           </h1>
         </header>
         <main className="flex-1 p-6">{children}</main>
-        <footer className="bg-zinc-900 text-gray-600 p-4 font-light text-xs h-12 z-20">
+        <footer className="bg-zinc-900 text-gray-600 p-4 font-light text-xs h-12 z-20 hidden xl:flex">
           2023 Demo
         </footer>
       </div>
