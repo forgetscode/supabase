@@ -2,26 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
+
+@layer base {
+  body {
+    @apply bg-black;
+  }
+}
+
+@layer utilities {
+  .animation-delay-2000 {
+    animation-delay: 2s;
+  }
+  .animation-delay-4000 {
+    animation-delay: 4s;
+  }
+}
+
+.input {
+  @apply outline-none border-gray-300 border rounded p-2 mt-3 w-full focus:outline-none focus:border-teal-500 focus:ring-1 focus:ring-teal-500;
+}
+
 .btn {
-  @apply bg-sky-700 hover:bg-sky-600 rounded-md px-4 py-2 text-white cursor-pointer;
-}
-
-.btn-link {
-  @apply text-sky-700 hover:text-sky-600 cursor-pointer;
-}
-
-.label {
-  @apply text-sm;
-}
-
-.field {
-  @apply border p-2 rounded outline-0 focus:ring-4 ring-sky-100 focus:border-sky-600;
-}
-
-.form-group {
-  @apply flex flex-col space-y-1;
-}
-
-.prose p {
-  @apply mb-2;
+  @apply text-white w-full mt-6 bg-teal-500 p-3 rounded cursor-pointer;
 }
