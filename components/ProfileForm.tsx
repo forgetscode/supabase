@@ -73,7 +73,7 @@ export function ProfileForm({ session }: Props) {
   return (
     <Fade>
       <div className='flex h-full w-full justify-center items-center'>
-      <div className='w-[540px] bg-gray-900 relative flex flex-col space-y-8 p-12 rounded-lg px-16 border border-teal-400 shadow-lg shadow-teal-600'>
+      <div className='max-w-[540px] md:w-[540px] bg-gray-900 relative flex flex-col space-y-8 p-12 rounded-lg px-16 border border-teal-400 shadow-lg shadow-teal-600'>
           <Blob/>
           <p className="text-3xl font-black text-white">Profile</p>
           <form className="flex flex-col space-y-8">

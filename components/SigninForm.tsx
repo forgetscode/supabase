@@ -28,7 +28,7 @@ export function SigninForm() {
           <img className="h-48 w-48 " src="https://raw.githubusercontent.com/praveenpuglia/tailwind-breeze/master/assets/logo.svg" alt="My Image"/>
           <p className='text-5xl font-black text-white p-6'>Website</p>
         </div>
-        <div className='max-w-[540px] bg-gray-900 relative flex flex-col space-y-8 p-12 rounded-lg px-16 border border-teal-400 shadow-lg shadow-teal-600'>
+        <div className='max-w-[540px] md:w-[540px] bg-gray-900 relative flex flex-col space-y-8 p-12 rounded-lg px-16 border border-teal-400 shadow-lg shadow-teal-600'>
           <Blob />
           <p className="text-3xl font-black text-white">Sign in to your account</p>
           {emailSent ? (
