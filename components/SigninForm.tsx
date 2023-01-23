@@ -21,6 +21,20 @@ export function SigninForm() {
     }
   }
 
+  async function signInWithGoogle() {
+    try {
+      setLoading(true)
+      const { error } = await supabase.auth.signIn({
+        provider: 'google',
+      })
+      if (error) throw error
+    } catch (error: any) {
+      console.error(error.error_description || error.message)
+    } finally {
+      setLoading(false)
+    }
+  }
+
   return (
     <Fade>
       <div className='flex flex-col h-full w-full justify-center items-center'>
@@ -73,6 +87,10 @@ export function SigninForm() {
               </div>
             </form>
           )}
+            <div className='border-t'/>
+            <button onClick={()=>signInWithGoogle()} className="text-white w-full mt-6 bg-red-500 p-3 rounded" disabled={loading}>
+              <span>{loading ? 'Processing…' : 'Google'}</span>
+            </button>
         </div>
       </div>
     </Fade>
